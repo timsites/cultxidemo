@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CULT XI — Loyalty over glory</title>
+<meta name="description" content="CULT XI — футболки с легендами футбола. Дроп Loyalty over glory: Totti, Gerrard, Reus. Предзаказ.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0b0c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CULT XI — Loyalty over glory">
+<meta property="og:description" content="Totti · Gerrard · Reus. Предзаказ на дроп открыт.">
+<meta property="og:image" content="https://timsites.github.io/cultxidemo/img/hero.jpg">
+<meta property="og:url" content="https://timsites.github.io/cultxidemo/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4ff3d' stroke-width='1.6'%3E%3Ccircle cx='12' cy='12' r='10' fill='%230b0b0c'/%3E%3Cpath d='M12 7.5l3.8 2.8-1.5 4.5H9.7l-1.5-4.5z' fill='%23d4ff3d'/%3E%3Cpath d='M12 2v5.5M15.8 10.3l5.6-1.6M14.3 14.8l3.2 4.9M9.7 14.8l-3.2 4.9M8.2 10.3L2.6 8.7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b0c; --bg2:#141416; --line:#26262a; --text:#f2f2f0; --muted:#9a9a9f;
+  --accent:#d4ff3d; --accent-ink:#0b0b0c; --red:#e0362c; --card:#ffffff;
+  --pitch:rgba(212,255,61,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px;position:relative}
+.h{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.95}
+
+/* demo ribbon */
+.demo{background:var(--accent);color:var(--accent-ink);font-size:13px;font-weight:600;text-align:center;padding:7px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(11,11,12,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Oswald,sans-serif;font-weight:700;font-size:26px;letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo svg{width:24px;height:24px}
+.links{display:flex;gap:28px;font-size:14px;color:var(--muted)}
+.links a{text-decoration:none}.links a:hover{color:var(--text)}
+.cart-btn{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600}
+.cart-btn:hover{border-color:var(--accent)}
+.badge{background:var(--accent);color:var(--accent-ink);border-radius:999px;min-width:22px;height:22px;display:inline-grid;place-items:center;font-size:12px;padding:0 6px}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 96px);display:flex;align-items:flex-end;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.75) 0%,rgba(11,11,12,.25) 60%,rgba(11,11,12,0) 100%),linear-gradient(180deg,rgba(11,11,12,.1) 0%,rgba(11,11,12,.3) 40%,rgba(11,11,12,.75) 70%,rgba(11,11,12,.95) 88%,var(--bg) 100%)}
+.hero .wrap{z-index:1;padding-bottom:56px;width:100%}
+.hero .photo{display:none}
+/* на широких экранах фото не растягиваем: фон — размытая копия, сама фотка в рамке в родном размере */
+@media (min-width:901px){
+  .hero{align-items:center}
+  .hero>img.bg{filter:blur(26px) brightness(.5) saturate(1.15);transform:scale(1.15)}
+  .hero::after{background:linear-gradient(180deg,rgba(11,11,12,.2) 0%,rgba(11,11,12,.35) 60%,rgba(11,11,12,.9) 90%,var(--bg) 100%)}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-top:56px;padding-bottom:88px}
+  .hero h1{font-size:clamp(64px,8.2vw,124px)}
+  .hero .photo{display:block;position:relative;justify-self:end;width:min(440px,100%);margin:0;transform:rotate(2.5deg);border:2px solid var(--accent);box-shadow:0 30px 60px rgba(0,0,0,.6);background:#000}
+  .hero .photo img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .hero .photo figcaption{position:absolute;left:-14px;bottom:22px;transform:rotate(-4deg);background:var(--accent);color:var(--accent-ink);font-family:Oswald,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:15px;padding:6px 12px;box-shadow:0 6px 16px rgba(0,0,0,.5)}
+}
+.live{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;margin-bottom:18px}
+.live i{width:8px;height:8px;border-radius:50%;background:#fff;animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.2}}
+.hero h1{font-size:clamp(52px,11vw,148px);font-weight:700}
+.hero h1 span{color:var(--accent)}
+.hero p{font-size:clamp(16px,2vw,20px);color:#d8d8d4;margin:16px 0 28px;max-width:520px}
+
+/* scoreboard timer */
+.board{display:inline-flex;flex-direction:column;background:#050505;border:2px solid #2c2c2c;box-shadow:inset 0 0 0 4px #111;padding:12px 18px 10px;margin-bottom:28px}
+.board .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;display:flex;justify-content:space-between;gap:24px}
+.board .lbl b{color:var(--red);font-weight:600}
+.digits{display:flex;align-items:flex-end;gap:6px;font-family:"Share Tech Mono",monospace;color:var(--accent);text-shadow:0 0 12px rgba(212,255,61,.45)}
+.digits div{text-align:center}
+.digits span{font-size:46px;line-height:1.05;display:block}
+.digits small{font-family:Inter,sans-serif;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.digits .sep{font-size:40px;padding-bottom:18px;opacity:.7}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.04em;padding:16px 28px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+
+/* caution tapes */
+.tapes{position:relative;height:230px;margin-top:-60px;overflow:hidden;z-index:2;pointer-events:none}
+.tape{position:absolute;left:-10%;width:120%;top:50%;display:flex;align-items:center;white-space:nowrap;overflow:hidden;background:var(--accent);color:var(--accent-ink);padding:9px 0;font-family:Oswald,sans-serif;font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.04em;box-shadow:0 10px 24px rgba(0,0,0,.55)}
+.tape.a{transform:translateY(-50%) rotate(-6deg);z-index:2}
+.tape.b{transform:translateY(-50%) rotate(4.5deg);filter:brightness(.88)}
+.tape .run{display:flex;align-items:center;will-change:transform}
+.tape span{display:inline-flex;align-items:center;gap:10px;margin-right:26px}
+.tape em{font-style:normal;background:var(--accent-ink);color:var(--accent);padding:1px 7px}
+.tape svg{width:20px;height:20px;flex:none}
+
+section{padding:96px 0;position:relative}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(38px,6vw,72px);font-weight:700}
+.sec-head .eyebrow{display:block;font-family:Inter,sans-serif;font-size:13px;letter-spacing:.14em;color:var(--accent);margin-bottom:10px;font-weight:600}
+.sec-head p{color:var(--muted);max-width:380px}
+
+/* pitch markings */
+.pitch{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.pitch svg{position:absolute;left:50%;top:0;transform:translateX(-50%);width:max(1400px,100%);height:100%}
+
+/* products */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--bg2);border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .2s}
+.card:hover{border-color:var(--accent)}
+.ph{position:relative;aspect-ratio:3/4;background:var(--card);overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s}
+.ph img.alt{opacity:0}
+.card:hover .ph img.alt{opacity:1}
+.ph .tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--accent-ink);color:var(--accent);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px}
+.jersey{padding:22px 20px 0;text-align:center;border-bottom:1px dashed var(--line);position:relative}
+.jersey .name{font-family:Oswald,sans-serif;font-weight:600;font-size:26px;letter-spacing:.18em;text-transform:uppercase}
+.jersey .big{font-family:Oswald,sans-serif;font-weight:700;font-size:92px;line-height:.9;color:var(--accent);margin:2px 0 14px}
+.jersey .club{position:absolute;left:20px;bottom:16px;font-size:12px;color:var(--muted);text-align:left;line-height:1.35}
+.jersey .price{position:absolute;right:20px;bottom:16px;font-weight:600}
+.body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.sizes{display:flex;flex-wrap:wrap;gap:6px}
+.sizes button{border:1px solid var(--line);min-width:46px;height:40px;font-size:13px;font-weight:600;transition:.15s}
+.sizes button:hover{border-color:var(--text)}
+.sizes button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.hint{font-size:13px;color:var(--muted);min-height:20px}
+.hint.err{color:var(--red)}
+.card .btn{margin-top:auto;width:100%}
+.help{margin-top:22px;color:var(--muted);font-size:14px}
+.help a{color:var(--accent)}
+
+/* specs as match stats */
+.stats{border:1px solid var(--line);background:var(--bg2)}
+.stats .top{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.stats .top b{color:var(--accent);font-weight:600}
+.specs{display:grid;grid-template-columns:repeat(5,1fr)}
+.spec{padding:24px 20px;border-right:1px solid var(--line)}
+.spec:last-child{border-right:0}
+.spec b{font-family:Oswald,sans-serif;font-size:30px;display:block;text-transform:uppercase}
+.spec span{color:var(--muted);font-size:13px}
+.spec .bar{height:4px;background:var(--line);margin-top:12px}
+.spec .bar i{display:block;height:100%;background:var(--accent)}
+
+/* lookbook */
+.look{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:12px}
+.look img{width:100%;height:100%;object-fit:cover}
+.look img:first-child{grid-row:span 2}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:48px 0 120px;position:relative;overflow:hidden}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.foot .logo{font-size:40px}
+.foot p{color:var(--muted);font-size:14px;margin-top:8px}
+.foot nav{display:flex;flex-direction:column;gap:8px;font-size:14px}
+.made{margin-top:32px;font-size:13px;color:var(--muted)}
+.made a{color:var(--accent)}
+
+/* drawer */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:.25s;z-index:50}
+.overlay.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:var(--bg);border-left:1px solid var(--line);z-index:60;transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid var(--line)}
+.dh h3{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:24px}
+.x{font-size:28px;line-height:1;color:var(--muted)}
+.db{flex:1;overflow:auto;padding:20px 24px}
+.empty{color:var(--muted);text-align:center;padding:48px 0}
+.item{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.item img{width:64px;height:80px;object-fit:cover;background:#fff}
+.item b{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:18px;display:block}
+.item small{color:var(--muted)}
+.qty{display:flex;align-items:center;gap:8px;margin-top:6px}
+.qty button{width:28px;height:28px;border:1px solid var(--line);font-weight:600}
+.rm{color:var(--muted);font-size:13px;text-decoration:underline}
+form{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+form h4{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:20px;margin-top:8px}
+label{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+input,textarea{background:var(--bg2);border:1px solid var(--line);color:var(--text);font:inherit;padding:12px 14px;outline:none}
+input:focus,textarea:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:70px}
+.radio{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.radio label{flex-direction:row;align-items:center;gap:8px;border:1px solid var(--line);padding:12px;color:var(--text);cursor:pointer}
+.radio input{accent-color:var(--accent)}
+.df{border-top:1px solid var(--line);padding:18px 24px;display:flex;flex-direction:column;gap:12px}
+.total{display:flex;justify-content:space-between;font-weight:600;font-size:18px}
+.df .note{font-size:12px;color:var(--muted)}
+
+/* success */
+.ok{text-align:center;padding:12px 0}
+.ok .goal{font-family:Oswald,sans-serif;font-weight:700;font-size:56px;color:var(--accent);line-height:1}
+.ok h4{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:24px;margin:6px 0 8px}
+.ok p{color:var(--muted);font-size:14px}
+.tg{margin:24px 0 8px;text-align:left}
+.tg .cap{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.bubble{background:#1e2c3a;border-radius:14px 14px 14px 4px;padding:12px 14px;font-size:14px;white-space:pre-line;line-height:1.45;max-width:340px}
+.bubble .from{color:#6ab3f3;font-weight:600;margin-bottom:4px;display:block}
+
+/* mobile sticky bar */
+.bar{display:none}
+
+@media (max-width:900px){
+  .links{display:none}
+  .grid{grid-template-columns:1fr;gap:32px}
+  .specs{grid-template-columns:repeat(2,1fr)}
+  .spec{border-bottom:1px solid var(--line)}
+  .spec:nth-child(2n){border-right:0}
+  .spec:last-child{grid-column:span 2;border-bottom:0}
+  .look{grid-template-columns:1fr 1fr;grid-template-rows:240px 240px 240px}
+  .look img:first-child{grid-row:auto;grid-column:span 2}
+  section{padding:72px 0}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .tapes{height:170px;margin-top:-40px}
+  .tape.a{transform:translateY(-50%) rotate(-11deg)}
+  .tape.b{transform:translateY(-50%) rotate(8deg)}
+  .tape{font-size:16px;padding:7px 0}
+  .tape svg{width:16px;height:16px}
+  .digits span{font-size:36px}
+  .digits .sep{font-size:30px;padding-bottom:16px}
+  .board{width:100%}
+  .hero .btn{width:100%}
+  .cart-btn .txt{display:none}
+  .bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:45;justify-content:space-between;align-items:center;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);color:var(--text);border:1.5px solid var(--accent);border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.6);font-weight:700;padding:15px 18px;text-transform:uppercase;font-size:14px;transform:translateY(140%);transition:transform .3s}
+  .bar.on{transform:none}
+  .bar span:last-child{color:var(--accent)}
+}
+</style>
+</head>
+<body>
+
+<div class="demo">Демо-версия сайта для CULT XI — заказы здесь не отправляются</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7.5l3.8 2.8-1.5 4.5H9.7l-1.5-4.5z" fill="currentColor"/><path d="M12 2v5.5M15.8 10.3l5.6-1.6M14.3 14.8l3.2 4.9M9.7 14.8l-3.2 4.9M8.2 10.3L2.6 8.7"/></svg>
+      CULT XI
+    </a>
+    <nav class="links">
+      <a href="#drop">Дроп</a>
+      <a href="#look">Лукбук</a>
+    </nav>
+    <button class="cart-btn" id="openCart"><span class="txt">Заказ</span><span class="badge" id="count">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img class="bg" src="img/hero.jpg" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div class="hero-text">
+      <span class="live"><i></i>Live · Предзаказ открыт</span>
+      <h1 class="h">Loyalty<br>over <span>glory</span></h1>
+      <p>Тотти, Джеррард и Ройс. Легенды, которые выбрали свой клуб вместо трофеев.</p>
+      <div class="board">
+        <div class="lbl"><span>До финального свистка</span><b>2-й тайм</b></div>
+        <div class="digits">
+          <div><span id="td">0</span><small>дн</small></div><span class="sep">:</span>
+          <div><span id="th">00</span><small>час</small></div><span class="sep">:</span>
+          <div><span id="tm">00</span><small>мин</small></div><span class="sep">:</span>
+          <div><span id="ts">00</span><small>сек</small></div>
+        </div>
+      </div>
+      <br>
+      <a href="#drop" class="btn">Выбрать футболку →</a>
+      </div>
+      <figure class="photo"><img src="img/hero.jpg" alt="CULT XI — Loyalty over glory, лукбук"><figcaption>Loyalty over glory · FW26</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="tapes" aria-hidden="true">
+    <div class="tape a"></div>
+    <div class="tape b"></div>
+  </div>
+
+  <section id="drop" style="padding-top:64px">
+    <div class="pitch" aria-hidden="true">
+      <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMin slice" fill="none" stroke="var(--pitch)" stroke-width="3">
+        <line x1="0" y1="450" x2="1400" y2="450"/>
+        <circle cx="700" cy="450" r="150"/>
+        <circle cx="700" cy="450" r="6" fill="var(--pitch)"/>
+        <rect x="430" y="-2" width="540" height="170"/>
+        <rect x="560" y="-2" width="280" height="62"/>
+        <path d="M600 168 A110 110 0 0 0 800 168"/>
+        <rect x="430" y="732" width="540" height="170"/>
+        <path d="M600 732 A110 110 0 0 1 800 732"/>
+      </svg>
+    </div>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h">Дроп</h2>
+        <p>Каждая футболка шьётся под конкретный заказ. Выбери принт и размер — остальное сделаем мы.</p>
+      </div>
+      <div class="grid" id="products"></div>
+      <p class="help">Не знаешь, какой размер взять? Пиши <a href="https://t.me/woosee1" target="_blank" rel="noopener">@woosee1</a> — подскажем.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="top"><span>Статистика футболки</span><b>CULT XI</b></div>
+      <div class="specs">
+        <div class="spec"><b>300 г/м²</b><span>Плотность</span><div class="bar"><i style="width:92%"></i></div></div>
+        <div class="spec"><b>Oversize</b><span>Крой</span><div class="bar"><i style="width:100%"></i></div></div>
+        <div class="spec"><b>DTG</b><span>Печать</span><div class="bar"><i style="width:85%"></i></div></div>
+        <div class="spec"><b>XS–4XL</b><span>Размеры</span><div class="bar"><i style="width:100%"></i></div></div>
+        <div class="spec"><b>Москва</b><span>Производство</span><div class="bar"><i style="width:100%"></i></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="look">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="h"><span class="eyebrow">Вне поля</span>Лукбук</h2><p>Как это выглядит на улице, а не на витрине.</p></div>
+      <div class="look">
+        <img src="img/look-totti-1.jpg" alt="Футболка Totti, лукбук" loading="lazy">
+        <img src="img/look-reus-2.jpg" alt="Футболка Reus, лукбук" loading="lazy">
+        <img src="img/look-gerrard-2.jpg" alt="Футболка Gerrard, лукбук" loading="lazy">
+        <img src="img/look-totti-2.jpg" alt="Футболка Totti, лукбук" loading="lazy">
+        <img src="img/look-street.jpg" alt="Лукбук CULT XI" loading="lazy">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><div class="logo">CULT XI</div><p>For the players they couldn’t control.</p></div>
+      <nav>
+        <a href="https://t.me/culttXI" target="_blank" rel="noopener">Telegram-канал</a>
+        <a href="https://t.me/woosee1" target="_blank" rel="noopener">Написать нам — @woosee1</a>
+      </nav>
+    </div>
+    <p class="made">Демо-версия. Разработка — <a href="https://timsites.github.io" target="_blank" rel="noopener">TimSites</a></p>
+  </div>
+</footer>
+
+<button class="bar" id="bar"><span id="barTxt">Заказ</span><span>Оформить →</span></button>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Заказ">
+  <div class="dh"><h3>Твой заказ</h3><button class="x" id="closeCart" aria-label="Закрыть">×</button></div>
+  <div class="db" id="db"></div>
+  <div class="df" id="df">
+    <div class="total"><span>Итого</span><span id="sum">0 ₽</span></div>
+    <button class="btn" id="submit" form="orderForm">Оформить предзаказ</button>
+    <span class="note">Оплата после подтверждения заказа в Telegram. Доставку посчитаем отдельно.</span>
+  </div>
+</aside>
+
+<script>
+const PRICE = 3990;
+const SIZES = ['XS','S','M','L','XL','2XL','3XL','4XL'];
+const PRODUCTS = [
+  {id:'totti',   name:'Totti',   num:10, club:'AS Roma',           era:'Il Capitano', img:'img/totti.jpg', alt:'img/look-totti-1.jpg'},
+  {id:'gerrard', name:'Gerrard', num:8,  club:'Liverpool',         era:'Stevie G',    img:'img/gerrard.jpg', alt:'img/look-gerrard-1.jpg'},
+  {id:'reus',    name:'Reus',    num:11, club:'Borussia Dortmund', era:'Rolls-Reus',  img:'img/reus.jpg', alt:'img/look-reus-1.jpg'},
+];
+const rub = n => n.toLocaleString('ru-RU') + ' ₽';
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem('cultxi-cart')) || []; } catch(e) {}
+const save = () => { try { localStorage.setItem('cultxi-cart', JSON.stringify(cart)); } catch(e) {} };
+
+/* countdown — в демо предзаказ всегда «открыт ещё 3 дня» */
+const end = new Date(); end.setDate(end.getDate() + 3); end.setHours(23, 59, 59, 0);
+const pad = n => String(n).padStart(2, '0');
+function tick(){
+  const s = Math.max(0, Math.floor((end - Date.now()) / 1000));
+  td.textContent = Math.floor(s / 86400);
+  th.textContent = pad(Math.floor(s % 86400 / 3600));
+  tm.textContent = pad(Math.floor(s % 3600 / 60));
+  ts.textContent = pad(s % 60);
+}
+tick(); setInterval(tick, 1000);
+
+/* caution tapes */
+const BALL = document.querySelector('.logo svg').outerHTML;
+const tape = items => '<div class="run">' + items.map(t => `<span>${t}</span><span>${BALL}</span>`).join('').repeat(5) + '</div>';
+document.querySelector('.tape.a').innerHTML = tape(['<em>10</em>Totti', '<em>8</em>Gerrard', '<em>11</em>Reus', 'Loyalty over glory', 'For the people. For the club']);
+document.querySelector('.tape.b').innerHTML = tape(['Loyalty over glory', '<em>11</em>Reus', 'For the people. For the club', '<em>10</em>Totti', '<em>8</em>Gerrard']);
+
+/* ленты едут в разные стороны, пока их прокручивают через экран */
+const tapesBox = document.querySelector('.tapes');
+const [runA, runB] = document.querySelectorAll('.tape .run');
+const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let ticking = false;
+function moveTapes(){
+  ticking = false;
+  const r = tapesBox.getBoundingClientRect();
+  const p = Math.min(1, Math.max(0, (innerHeight - r.top) / (innerHeight + r.height)));
+  runA.style.transform = `translateX(${-200 - p * 180}px)`;
+  runB.style.transform = `translateX(${-400 + p * 180}px)`;
+}
+if (!still) addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(moveTapes); } }, {passive:true});
+moveTapes();
+
+/* products */
+products.innerHTML = PRODUCTS.map(p => `
+  <article class="card" data-id="${p.id}">
+    <div class="ph">
+      <span class="tag">Предзаказ</span>
+      <img src="${p.img}" alt="Футболка ${p.name}">
+      <img class="alt" src="${p.alt}" alt="Футболка ${p.name} на модели" loading="lazy">
+    </div>
+    <div class="jersey">
+      <div class="name">${p.name}</div>
+      <div class="big">${p.num}</div>
+      <div class="club">${p.club}<br>${p.era}</div>
+      <div class="price">${rub(PRICE)}</div>
+    </div>
+    <div class="body">
+      <div class="sizes">${SIZES.map(s => `<button type="button" data-size="${s}">${s}</button>`).join('')}</div>
+      <p class="hint">Выбери размер</p>
+      <button class="btn add" type="button">В заказ</button>
+    </div>
+  </article>`).join('');
+
+products.addEventListener('click', e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  const hint = card.querySelector('.hint');
+  const sizeBtn = e.target.closest('[data-size]');
+  if (sizeBtn) {
+    card.querySelectorAll('[data-size]').forEach(b => b.classList.toggle('on', b === sizeBtn));
+    hint.textContent = 'Размер ' + sizeBtn.dataset.size; hint.classList.remove('err');
+    return;
+  }
+  if (e.target.closest('.add')) {
+    const sel = card.querySelector('[data-size].on');
+    if (!sel) { hint.textContent = 'Сначала выбери размер'; hint.classList.add('err'); return; }
+    const id = card.dataset.id, size = sel.dataset.size;
+    const row = cart.find(i => i.id === id && i.size === size);
+    row ? row.qty++ : cart.push({id, size, qty:1});
+    save(); render(); open();
+  }
+});
+
+/* cart */
+const total = () => cart.reduce((a, i) => a + i.qty * PRICE, 0);
+const qtyAll = () => cart.reduce((a, i) => a + i.qty, 0);
+let done = false;
+
+function render(){
+  count.textContent = qtyAll();
+  sum.textContent = rub(total());
+  barTxt.textContent = `Заказ · ${qtyAll()} шт · ${rub(total())}`;
+  bar.classList.toggle('on', qtyAll() > 0 && !drawer.classList.contains('on'));
+  if (done) return;
+  df.style.display = cart.length ? '' : 'none';
+  if (!cart.length) { db.innerHTML = '<p class="empty">Пока пусто. Выбери футболку из дропа.</p>'; return; }
+  db.innerHTML = cart.map((i, n) => {
+    const p = PRODUCTS.find(x => x.id === i.id);
+    return `<div class="item">
+      <img src="${p.img}" alt="">
+      <div><b>${p.name} #${p.num}</b><small>Размер ${i.size} · ${rub(PRICE)}</small>
+        <div class="qty"><button data-dec="${n}" aria-label="Меньше">−</button><span>${i.qty}</span><button data-inc="${n}" aria-label="Больше">+</button></div></div>
+      <button class="rm" data-rm="${n}">Убрать</button>
+    </div>`;
+  }).join('') + `
+    <form id="orderForm" novalidate>
+      <h4>Контакты</h4>
+      <label>Имя<input name="name" required autocomplete="name" placeholder="Как к тебе обращаться"></label>
+      <label>Telegram или телефон<input name="contact" required placeholder="@username или +7…"></label>
+      <h4>Получение</h4>
+      <div class="radio">
+        <label><input type="radio" name="ship" value="СДЭК" checked> СДЭК</label>
+        <label><input type="radio" name="ship" value="Самовывоз, Москва"> Самовывоз</label>
+      </div>
+      <label id="cityWrap">Город<input name="city" placeholder="Например, Казань"></label>
+      <label>Комментарий<textarea name="note" placeholder="Если нужно что-то уточнить"></textarea></label>
+    </form>`;
+  const f = document.getElementById('orderForm');
+  f.addEventListener('change', () => { cityWrap.style.display = f.ship.value === 'СДЭК' ? '' : 'none'; });
+  f.addEventListener('input', e => { e.target.style.borderColor = ''; });
+  f.addEventListener('submit', submitOrder);
+}
+
+db.addEventListener('click', e => {
+  const t = e.target;
+  if (t.dataset.inc) cart[t.dataset.inc].qty++;
+  else if (t.dataset.dec) { const i = cart[t.dataset.dec]; i.qty > 1 ? i.qty-- : cart.splice(t.dataset.dec, 1); }
+  else if (t.dataset.rm) cart.splice(t.dataset.rm, 1);
+  else return;
+  save(); render();
+});
+
+function submitOrder(e){
+  e.preventDefault();
+  const f = e.target;
+  let bad = false;
+  [f.name, f.contact, ...(f.ship.value === 'СДЭК' ? [f.city] : [])].forEach(inp => {
+    const empty = !inp.value.trim();
+    inp.style.borderColor = empty ? 'var(--red)' : '';
+    bad = bad || empty;
+  });
+  if (bad) return;
+  const no = 1000 + Math.floor(Math.random() * 9000);
+  const lines = cart.map(i => { const p = PRODUCTS.find(x => x.id === i.id); return `${p.name} #${p.num} — ${i.size} × ${i.qty}`; }).join('\n');
+  const ship = f.ship.value === 'СДЭК' ? `СДЭК, ${f.city.value.trim()}` : f.ship.value;
+  const msg = `🛒 Новый предзаказ #${no}\n\n${lines}\nИтого: ${rub(total())}\n\n👤 ${f.name.value.trim()}\n📱 ${f.contact.value.trim()}\n📦 ${ship}` + (f.note.value.trim() ? `\n💬 ${f.note.value.trim()}` : '');
+  const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  done = true; cart = []; save();
+  df.style.display = 'none';
+  db.innerHTML = `<div class="ok">
+      <div class="goal">GOAL! ⚽</div>
+      <h4>Заказ принят</h4>
+      <p>Скоро напишем тебе в Telegram, чтобы подтвердить заказ и посчитать доставку.</p>
+      <div class="tg"><div class="cap">Так заявка придёт бренду в Telegram:</div>
+        <div class="bubble"><span class="from">CULT XI · заказы</span>${esc(msg)}</div></div>
+      <button class="btn ghost" id="again" style="margin-top:20px;width:100%">Вернуться к дропу</button>
+    </div>`;
+  document.getElementById('again').onclick = () => { done = false; close(); render(); location.hash = 'drop'; };
+  render();
+}
+
+function open(){ drawer.classList.add('on'); overlay.classList.add('on'); render(); }
+function close(){ drawer.classList.remove('on'); overlay.classList.remove('on'); render(); }
+openCart.onclick = open; bar.onclick = open;
+closeCart.onclick = close; overlay.onclick = close;
+document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+render();
+</script>
+</body>
+</html>
