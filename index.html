@@ -13,15 +13,15 @@
 <meta property="og:image" content="https://timsites.github.io/cultxidemo/img/hero.jpg">
 <meta property="og:url" content="https://timsites.github.io/cultxidemo/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4ff3d' stroke-width='1.6'%3E%3Ccircle cx='12' cy='12' r='10' fill='%230b0b0c'/%3E%3Cpath d='M12 7.5l3.8 2.8-1.5 4.5H9.7l-1.5-4.5z' fill='%23d4ff3d'/%3E%3Cpath d='M12 2v5.5M15.8 10.3l5.6-1.6M14.3 14.8l3.2 4.9M9.7 14.8l-3.2 4.9M8.2 10.3L2.6 8.7'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d0475b' stroke-width='1.6'%3E%3Ccircle cx='12' cy='12' r='10' fill='%230b0b0c'/%3E%3Cpath d='M12 7.5l3.8 2.8-1.5 4.5H9.7l-1.5-4.5z' fill='%23d0475b'/%3E%3Cpath d='M12 2v5.5M15.8 10.3l5.6-1.6M14.3 14.8l3.2 4.9M9.7 14.8l-3.2 4.9M8.2 10.3L2.6 8.7'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0b0b0c; --bg2:#141416; --line:#26262a; --text:#f2f2f0; --muted:#9a9a9f;
-  --accent:#d4ff3d; --accent-ink:#0b0b0c; --red:#e0362c; --card:#ffffff;
-  --pitch:rgba(212,255,61,.09);
+  --accent:#7e1626; --accent-ink:#f6ece8; --accent-text:#d0475b; --red:#e0362c; --card:#ffffff;
+  --pitch:rgba(208,71,91,.12);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -67,14 +67,14 @@ header{position:sticky;top:0;z-index:40;background:rgba(11,11,12,.88);backdrop-f
 .live i{width:8px;height:8px;border-radius:50%;background:#fff;animation:blink 1.2s infinite}
 @keyframes blink{50%{opacity:.2}}
 .hero h1{font-size:clamp(52px,11vw,148px);font-weight:700}
-.hero h1 span{color:var(--accent)}
+.hero h1 span{color:var(--accent-text)}
 .hero p{font-size:clamp(16px,2vw,20px);color:#d8d8d4;margin:16px 0 28px;max-width:520px}
 
 /* scoreboard timer */
 .board{display:inline-flex;flex-direction:column;background:#050505;border:2px solid #2c2c2c;box-shadow:inset 0 0 0 4px #111;padding:12px 18px 10px;margin-bottom:28px}
 .board .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;display:flex;justify-content:space-between;gap:24px}
 .board .lbl b{color:var(--red);font-weight:600}
-.digits{display:flex;align-items:flex-end;gap:6px;font-family:"Share Tech Mono",monospace;color:var(--accent);text-shadow:0 0 12px rgba(212,255,61,.45)}
+.digits{display:flex;align-items:flex-end;gap:6px;font-family:"Share Tech Mono",monospace;color:var(--accent-text);text-shadow:0 0 12px rgba(208,71,91,.55)}
 .digits div{text-align:center}
 .digits span{font-size:46px;line-height:1.05;display:block}
 .digits small{font-family:Inter,sans-serif;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
@@ -97,7 +97,7 @@ header{position:sticky;top:0;z-index:40;background:rgba(11,11,12,.88);backdrop-f
 section{padding:96px 0;position:relative}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
 .sec-head h2{font-size:clamp(38px,6vw,72px);font-weight:700}
-.sec-head .eyebrow{display:block;font-family:Inter,sans-serif;font-size:13px;letter-spacing:.14em;color:var(--accent);margin-bottom:10px;font-weight:600}
+.sec-head .eyebrow{display:block;font-family:Inter,sans-serif;font-size:13px;letter-spacing:.14em;color:var(--accent-text);margin-bottom:10px;font-weight:600}
 .sec-head p{color:var(--muted);max-width:380px}
 
 /* pitch markings */
@@ -112,10 +112,10 @@ section{padding:96px 0;position:relative}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s}
 .ph img.alt{opacity:0}
 .card:hover .ph img.alt{opacity:1}
-.ph .tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--accent-ink);color:var(--accent);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px}
+.ph .tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px}
 .jersey{padding:22px 20px 0;text-align:center;border-bottom:1px dashed var(--line);position:relative}
 .jersey .name{font-family:Oswald,sans-serif;font-weight:600;font-size:26px;letter-spacing:.18em;text-transform:uppercase}
-.jersey .big{font-family:Oswald,sans-serif;font-weight:700;font-size:92px;line-height:.9;color:var(--accent);margin:2px 0 14px}
+.jersey .big{font-family:Oswald,sans-serif;font-weight:700;font-size:92px;line-height:.9;color:var(--accent-text);margin:2px 0 14px}
 .jersey .club{position:absolute;left:20px;bottom:16px;font-size:12px;color:var(--muted);text-align:left;line-height:1.35}
 .jersey .price{position:absolute;right:20px;bottom:16px;font-weight:600}
 .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
@@ -127,12 +127,12 @@ section{padding:96px 0;position:relative}
 .hint.err{color:var(--red)}
 .card .btn{margin-top:auto;width:100%}
 .help{margin-top:22px;color:var(--muted);font-size:14px}
-.help a{color:var(--accent)}
+.help a{color:var(--accent-text)}
 
 /* specs as match stats */
 .stats{border:1px solid var(--line);background:var(--bg2)}
 .stats .top{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.stats .top b{color:var(--accent);font-weight:600}
+.stats .top b{color:var(--accent-text);font-weight:600}
 .specs{display:grid;grid-template-columns:repeat(5,1fr)}
 .spec{padding:24px 20px;border-right:1px solid var(--line)}
 .spec:last-child{border-right:0}
@@ -153,7 +153,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 120px;position:relative;o
 .foot p{color:var(--muted);font-size:14px;margin-top:8px}
 .foot nav{display:flex;flex-direction:column;gap:8px;font-size:14px}
 .made{margin-top:32px;font-size:13px;color:var(--muted)}
-.made a{color:var(--accent)}
+.made a{color:var(--accent-text)}
 
 /* drawer */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:.25s;z-index:50}
@@ -187,7 +187,7 @@ textarea{resize:vertical;min-height:70px}
 
 /* success */
 .ok{text-align:center;padding:12px 0}
-.ok .goal{font-family:Oswald,sans-serif;font-weight:700;font-size:56px;color:var(--accent);line-height:1}
+.ok .goal{font-family:Oswald,sans-serif;font-weight:700;font-size:56px;color:var(--accent-text);line-height:1}
 .ok h4{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:24px;margin:6px 0 8px}
 .ok p{color:var(--muted);font-size:14px}
 .tg{margin:24px 0 8px;text-align:left}
@@ -223,7 +223,7 @@ textarea{resize:vertical;min-height:70px}
   .cart-btn .txt{display:none}
   .bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:45;justify-content:space-between;align-items:center;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);color:var(--text);border:1.5px solid var(--accent);border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.6);font-weight:700;padding:15px 18px;text-transform:uppercase;font-size:14px;transform:translateY(140%);transition:transform .3s}
   .bar.on{transform:none}
-  .bar span:last-child{color:var(--accent)}
+  .bar span:last-child{color:var(--accent-text)}
 }
 </style>
 </head>
